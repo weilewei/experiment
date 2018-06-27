@@ -1,2 +1,0 @@
-define(foo, a,block(shape(a)))
-apply(foo,sys_argv)

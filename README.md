@@ -1,6 +1,6 @@
 To run nn_phylanx.physl in rostam, type below commands:
 
-~/src/repos/phylanx/build_Release/bin/physl ~/experiment/nn_phylanx.physl 0.1 5000
+~/path-to-phylanx/build_Release/bin/physl ~/experiment/nn_phylanx.physl 0.1 5000
 
 , where
 the 1st argument is the path of physl interpreter of phylanx release version,

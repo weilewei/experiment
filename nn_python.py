@@ -43,14 +43,21 @@ hiddenlayer_neurons = 3  # number of hidden layers neurons
 output_neurons = 1  # number of neurons at output layer
 
 # weight and bias initialization
-wh = np.random.uniform(size=(inputlayer_neurons, hiddenlayer_neurons))
-bh = np.random.uniform(size=(1, hiddenlayer_neurons))
-wout = np.random.uniform(size=(hiddenlayer_neurons, output_neurons))
-bout = np.random.uniform(size=(1, output_neurons))
+#wh = np.random.uniform(size=(inputlayer_neurons, hiddenlayer_neurons))
+#bh = np.random.uniform(size=(1, hiddenlayer_neurons))
+#wout = np.random.uniform(size=(hiddenlayer_neurons, output_neurons))
+#bout = np.random.uniform(size=(1, output_neurons))
+wh = np.array([[0.05414605, 0.02560007, 0.01744929],
+               [0.82263347, 0.06131265, 0.201618],
+               [0.77369734, 0.12512908, 0.58846846],
+               [0.65657794, 0.18973852, 0.80577607]])
 
-treading = time.time()
+bh = np.array([[0.13638278, 0.9844139, 0.07151701]])
+
+wout = np.array([[0.9507727],
+                 [0.57245176],
+                 [0.22638845]])
+bout = np.array([[0.45447385]])
 main(X, output_y, wh, bh, wout, bout, lr)
-tlra = time.time()
 
-print("time:", tlra - treading)
 
